@@ -1,0 +1,62 @@
+@import url(./general.css);
+
+/**************/
+/* HEADER */
+/**************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1300px;
+  padding: 12px 12px;
+  margin: 0 auto;
+}
+
+.logo {
+  padding: 12px 24px;
+  letter-spacing: 4px;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  /* padding: 8px 0; */
+}
+
+.nav-link {
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding-bottom: 12px;
+}
+
+.nav-link:hover {
+  color: var(--bg-btn);
+  border-bottom: 2px solid var(--bg-btn);
+}
+.nav-link:active {
+  border-bottom: 2px solid var(--text-btn);
+}
+.nav-link.nav-link-cta {
+  padding: 12px 24px;
+  border-radius: 6px;
+  background-color: var(--bg-btn);
+  color: var(--text-btn);
+}
+
+.nav-link.nav-link-cta:hover {
+  background-color: var(--text-btn);
+  color: var(--bg-btn);
+  border-bottom: none;
+}
+
+.nav-link.nav-link-cta:active {
+  box-shadow: inset 0 0 4px var(--bg-btn);
+}
+/**************/
+/* HERO*/
+/**************/
+.main-header {
+  font-size: 52px;
+  line-height: 64px;
+}
