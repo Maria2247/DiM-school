@@ -56,6 +56,10 @@
 /**************/
 /* HERO*/
 /**************/
+
+.section-hero {
+  padding: 96px 0;
+}
 .main-header {
   font-size: 52px;
   line-height: 64px;
