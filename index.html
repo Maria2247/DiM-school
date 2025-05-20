@@ -47,12 +47,18 @@
       <div class="logo-holder"><a href="/" class="logo">Д.і.М.</a></div>
       <nav class="navigation">
         <ul class="nav-list">
-          <li><a href="#about" class="nav-link">Про нас</a></li>
-          <li><a href="#courses" class="nav-link">Курси</a></li>
-          <li><a href="#testimonials" class="nav-link">Відгуки</a></li>
-          <li><a href="#pricing" class="nav-link">Ціни</a></li>
-          <li>
-            <a href="#enroll" class="nav-link nav-link-cta">Записатися</a>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">Про нас</a>
+          </li>
+          <li class="nav-item">
+            <a href="#courses" class="nav-link">Курси</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials" class="nav-link">Відгуки</a>
+          </li>
+          <li class="nav-item"><a href="#pricing" class="nav-link">Ціни</a></li>
+          <li class="nav-item">
+            <a href="#enroll" class="nav-link cta-btn">Записатися</a>
           </li>
         </ul>
       </nav>
@@ -60,61 +66,150 @@
     <main>
       <section class="section-hero">
         <div class="container">
-          <h1 class="main-header">
-            Ласкаво просимо до онлайн репетиторського центру Д.і.М.
-          </h1>
-          <p>
-            Додаткові заняття для учнів початкових класів та підготовки до школи
-            з досвідченими педагогами. Інтерактивно. Весело.
-          </p>
-          <a href="#courses">Дізнатися більше</a>
-          <a href="#enroll">Записатися</a>
+          <div class="hero-text-box">
+            <h1 class="main-header">
+              Ласкаво просимо до онлайн репетиторського центру Д.і.М.
+            </h1>
+            <p class="hero-text">
+              Додаткові заняття для учнів початкових класів та підготовки до
+              школи з досвідченими педагогами. <br />Інтерактивно. Весело.
+            </p>
+            <div class="hero-btn-holder">
+              <a href="#enroll" class="cta-btn btn-light-bg">Записатися</a>
+              <a href="#courses" class="learn-more-btn">Дізнатися більше</a>
+            </div>
+          </div>
+          <!-- <div class="hero-img-box">
+            <img
+              src="../src/styles/img/hero.jpg"
+              alt="girl studying online"
+              class="hero-img"
+            />
+          </div> -->
         </div>
       </section>
       <section class="about">
-        <h2 class="section-header">Про нас</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          perferendis dicta culpa nam rem ex autem est ratione possimus incidunt
-          beatae, atque harum temporibus sed nulla iusto id facilis nihil!
-        </p>
+        <div class="container">
+          <h2 class="section-header">Про нас</h2>
+          <p>
+            У нашому навчальному центрі кожен курс — це не просто набір занять,
+            а продумана система, що працює на результат. Незалежно від обраного
+            напряму, ми гарантуємо: ✅ Інтерактивні вправи — діти вчаться через
+            гру та активну участь ✅ Персональний підхід — увага до
+            індивідуальних потреб кожного ✅ 45-хвилинні заняття — оптимальна
+            тривалість для ефективного навчання ✅ Система накопичувальних балів
+            — мотивація через досягнення
+          </p>
+        </div>
       </section>
-      <section class="courses">
-        <h2 class="section-header">Наші курси</h2>
-        <ul>
-          <li>
-            <p>Курс швидкочитання</p>
-            <p>
-              Хочеш читати в 2-3 рази швидше і краще запам’ятовувати прочитане?
-              Тоді наш курс – саме для тебе! - Онлайн-формат –Зручно з
-              будь-якого місця - Тренуємо увагу, памʼять і розуміння тексту -
-              Результат вже після кількох занять! 1. Інтерактивні вправи 2.
-              Персональний підхід 3. Тривалість заняття – 45 хв 4. Система
-              накопичувальних балів
-            </p>
-          </li>
-          <li>
-            <p>Підготовка до школи</p>
-            <p>
-              Підготовка до школи Хочете, щоб ваша дитина з радістю пішла до
-              школи? У програмі курсу: - розвиток мовлення та звукового аналізу-
-              навчання читати та елементам письма - логіка, мислення, увага та
-              пам'ять- основи математики - знайомство зі шкільним режимом через
-              гру Інтерактив, ігри, вправи — без нудьги та перевантаження. Для
-              дітей 5-6 років. 1. Інтерактивні вправи 2. Персональний підхід 3.
-              Тривалість заняття - 45 хв 4. Система накопичувальних балів
-            </p>
-          </li>
-          <li>
-            <p>Початкові класи 1- 4</p>
-            <p>
-              Цікаво, легко, інтерактивно, творчо залучаю дітей до вивчення
-              складного матеріалу: - допоможу поліпшити успішність; - усунути
-              прогалини у знаннях; - швидко вивчити таблицю множення та ділення
-              - допоможу виконати домашні завдання
-            </p>
-          </li>
-        </ul>
+      <section id="courses">
+        <div class="container">
+          <h2 class="section-header">Ми пропонуємо:</h2>
+          <div class="courses-wrapper">
+            <div class="courses-card">
+              <h3 class="course-name">Курс швидкочитання</h3>
+              <p class="course-text">Читай у 2-3 рази швидше і краще:</p>
+              <ul class="course-desc-list">
+                <li class="course-descr-item">
+                  <svg class="icon icon-arrow-right">
+                    <use
+                      xlink:href="./src/styles/img/symbol-defs.svg#icon-arrow-right2"
+                    ></use>
+                  </svg>
+                  Онлайн-формат - зручно будь-де
+                </li>
+                <li class="course-descr-item">
+                  <svg class="icon icon-arrow-right">
+                    <use
+                      xlink:href="./src/styles/img/symbol-defs.svg#icon-arrow-right2"
+                    ></use>
+                  </svg>
+                  Розвиток уваги, памʼяті, розуміння
+                </li>
+                <li class="course-descr-item">
+                  <svg class="icon icon-arrow-right">
+                    <use
+                      xlink:href="./src/styles/img/symbol-defs.svg#icon-arrow-right2"
+                    ></use>
+                  </svg>
+                  Результати вже за кілька занять
+                </li>
+              </ul>
+            </div>
+            <div class="courses-card">
+              <h3 class="course-name">Підготовка до школи</h3>
+              <p class="course-text">Стартуй у школу з радістю:</p>
+              <ul class="course-desc-list">
+                <li class="course-descr-item">
+                  <svg class="icon icon-arrow-right">
+                    <use
+                      xlink:href="./src/styles/img/symbol-defs.svg#icon-arrow-right2"
+                    ></use>
+                  </svg>
+                  Розвиток мовлення, читання, письма
+                </li>
+                <li class="course-descr-item">
+                  <svg class="icon icon-arrow-right">
+                    <use
+                      xlink:href="./src/styles/img/symbol-defs.svg#icon-arrow-right2"
+                    ></use>
+                  </svg>
+                  Поліпшення логіки, пам'яті, уваги
+                </li>
+                <li class="course-descr-item">
+                  <svg class="icon icon-arrow-right">
+                    <use
+                      xlink:href="./src/styles/img/symbol-defs.svg#icon-arrow-right2"
+                    ></use>
+                  </svg>
+                  Грайлива адаптація до режиму
+                </li>
+              </ul>
+            </div>
+            <div class="courses-card">
+              <h3 class="course-name">Початкові класи 1-4</h3>
+              <p class="course-text">
+                Залучення до вивчення складного матеріалу:
+              </p>
+              <ul class="course-desc-list">
+                <li class="course-descr-item">
+                  <svg class="icon icon-arrow-right">
+                    <use
+                      xlink:href="./src/styles/img/symbol-defs.svg#icon-arrow-right2"
+                    ></use>
+                  </svg>
+                  Покращення успішності в школі
+                </li>
+                <li class="course-descr-item">
+                  <svg class="icon icon-arrow-right">
+                    <use
+                      xlink:href="./src/styles/img/symbol-defs.svg#icon-arrow-right2"
+                    ></use>
+                  </svg>
+                  Усунення прогалин у знаннях
+                </li>
+                <li class="course-descr-item">
+                  <svg class="icon icon-arrow-right">
+                    <use
+                      xlink:href="./src/styles/img/symbol-defs.svg#icon-arrow-right2"
+                    ></use>
+                  </svg>
+                  Допомога у виконанні домашніх завдань
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="enroll">
+        <div class="container">
+          <h3 class="section-header">Записатися легко!</h3>
+          <p class="section-text">
+            Будь ласка, заповніть форму і ми обов'язково з Вами зв'яжемся
+          </p>
+          <form action=""></form>
+        </div>
       </section>
     </main>
   </body>

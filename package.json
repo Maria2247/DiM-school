@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "modern-normalize": "^3.0.1"
+    "modern-normalize": "^3.0.1",
+    "svgxuse": "^1.2.6"
   }
 }
