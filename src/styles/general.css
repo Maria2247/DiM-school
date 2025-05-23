@@ -8,7 +8,7 @@
   --bg-main: #cfddeb;
   --color-blue: #2e4a63;
   /* --bg-btn-hover: #253b4f; */
-  /* --bg-secondary: rgba(231, 219, 197, 0.8); */
+  /* --bg-secondary: rgba(241, 233,220, 0.8); */
   --color-beige: #f1e9dc;
   --color-light-beige: #fefdfc;
   --text-color: #444;
@@ -55,7 +55,9 @@ ul,
 ol {
   list-style: none;
 }
-
+input {
+  display: inline-block;
+}
 button {
   cursor: pointer;
 }

@@ -88,7 +88,7 @@
           </div> -->
         </div>
       </section>
-      <section class="about">
+      <section class="section-about">
         <div class="container">
           <h2 class="section-header">Про нас</h2>
           <p>
@@ -102,7 +102,7 @@
           </p>
         </div>
       </section>
-      <section id="courses">
+      <section id="courses" class="section-courses">
         <div class="container">
           <h2 class="section-header">Ми пропонуємо:</h2>
           <div class="courses-wrapper">
@@ -202,13 +202,113 @@
         </div>
       </section>
 
-      <section id="enroll">
+      <section id="enroll" class="section-enroll">
         <div class="container">
           <h3 class="section-header">Записатися легко!</h3>
           <p class="section-text">
-            Будь ласка, заповніть форму і ми обов'язково з Вами зв'яжемся
+            Будь ласка, заповніть форму і ми обов'язково з Вами зв'яжемся!
           </p>
-          <form action=""></form>
+          <form action="#" class="enroll-form">
+            <div class="form-column">
+              <label for="name" class="form-label">Ваше ім'я:</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-input"
+                pattern="^[А-Яа-яІіЇїЄєҐґ'’\s]{4,}$"
+                placeholder="Наталя Петрівна"
+                autocomplete="name"
+                required
+              />
+              <label for="tel" class="form-label">Номер телефону:</label>
+              <input
+                type="tel"
+                name="telNumber"
+                id="tel"
+                class="form-input"
+                placeholder="+38(067)999-88-77"
+                autocomplete="tel"
+              />
+              <label for="email" class="form-label"
+                >Адреса електронної пошти:</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-input"
+                placeholder="example@example.com"
+                autocomplete="email"
+              />
+
+              <fieldset class="fieldset-wrapper">
+                <legend>Будь ласка, вкажіть бажаний метод зв'язку:</legend>
+
+                <label for="telephone" class="form-label-radio">
+                  <input
+                    type="radio"
+                    id="telephone"
+                    name="how-to-contact"
+                    class="form-input-radio"
+                  />Звичайний дзвінок
+                </label>
+
+                <div class="messenger-type-holder">
+                  <label for="messenger" class="form-label-radio">
+                    <input
+                      type="radio"
+                      name="how-to-contact"
+                      id="messenger"
+                      class="form-input-radio"
+                    />Месседжер
+                  </label>
+                  <label for="messenger-type" class="form-label-select">
+                    / Який саме?
+                    <select
+                      name="messenger"
+                      id="messenger-type"
+                      class="form-input-messenger"
+                    >
+                      <option value="telegram">Telegram</option>
+                      <option value="whatsApp">WhatsApp</option>
+                      <option value="viber">Viber</option>
+                    </select>
+                  </label>
+                </div>
+
+                <label for="radio-email" class="form-label-radio">
+                  <input
+                    type="radio"
+                    id="radio-email"
+                    name="how-to-contact"
+                    class="form-input-radio"
+                  />Електронна пошта</label
+                >
+              </fieldset>
+            </div>
+            <div class="form-column">
+              <label for="course" class="form-label" class="form-label"
+                >Обраний курс:</label
+              >
+              <select name="course" id="course" class="form-input">
+                <option value="reading">Курс швидкочитання</option>
+                <option value="pre-school">Підготовка до школи</option>
+                <option value="elem-school">Початкові класи 1-4</option>
+              </select>
+              <label for="comment" class="form-label"
+                >Чи є у вас якісь питання?</label
+              >
+              <textarea
+                name="comment"
+                id="comment"
+                class="form-input"
+                cols="30"
+                rows="10"
+                placeholder="Ваш коментар або питання"
+              ></textarea>
+            </div>
+          </form>
         </div>
       </section>
     </main>
