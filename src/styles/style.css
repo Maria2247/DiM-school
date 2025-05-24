@@ -169,9 +169,39 @@
 /**************/
 /* ABOUT US*/
 /**************/
+.section-about {
+  padding: 48px 0;
+}
+.about-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 45px;
+}
 
-.about {
-  visibility: hidden;
+.about-img-holder {
+  padding: 32px;
+flex: 1;
+background-color: rgba(46, 74, 99, 0.2) ;
+border-radius: 8px;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 450px;
+  max-height: 800px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 1px 0 10px var(--color-blue);
+}
+
+.about-text-holder {
+  flex: 1;
+  /* margin-top: 24px; */
+}
+
+.about-text:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 /**************/
@@ -183,6 +213,30 @@
 .section-header {
   font-size: 44px;
   margin-bottom: 52px;
+}
+
+.courses-intro-wrapper {
+  margin-bottom: 42px;
+}
+.intro-text {
+  margin-bottom: 32px;
+}
+.intro-list {
+  display: flex;
+  gap: 8px;
+}
+.intro-item {
+  padding-left: 12px;
+  border-left: 1px solid #888;
+}
+
+.intro-span {
+font-weight: 800;
+}
+
+.icon {
+}
+.icon-arrow-right {
 }
 .courses-wrapper {
   display: flex;
@@ -262,16 +316,17 @@
 
 .enroll-form {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  width: 100%;
-  gap: 44px;
+  width: 50%;
+  /* gap: 25px; */
 }
-
+/* 
 .form-column {
   display: flex;
   flex-direction: column;
   width: 50%;
-}
+} */
 
 .form-label {
   margin-bottom: 8px;
@@ -279,13 +334,13 @@
 
 .form-input {
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   background-color: transparent;
   border-radius: 4px;
   outline: none;
 }
 
-.fieldset-wrapper {
+/* .fieldset-wrapper {
   width: 100%;
   margin-bottom: 16px;
   margin-top: 16px;
@@ -323,4 +378,4 @@
 .form-label-select {
   /* display: flex; */
   /* flex-direction: column; */
-}
+} */

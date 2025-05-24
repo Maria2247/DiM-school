@@ -6,7 +6,7 @@
 
 :root {
   --bg-main: #cfddeb;
-  --color-blue: #2e4a63;
+  --color-blue: rgb(46, 74, 99);
   /* --bg-btn-hover: #253b4f; */
   /* --bg-secondary: rgba(241, 233,220, 0.8); */
   --color-beige: #f1e9dc;

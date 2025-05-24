@@ -88,23 +88,72 @@
           </div> -->
         </div>
       </section>
-      <section class="section-about">
+      <section class="section-about" id="about">
         <div class="container">
           <h2 class="section-header">Про нас</h2>
-          <p>
-            У нашому навчальному центрі кожен курс — це не просто набір занять,
-            а продумана система, що працює на результат. Незалежно від обраного
-            напряму, ми гарантуємо: ✅ Інтерактивні вправи — діти вчаться через
-            гру та активну участь ✅ Персональний підхід — увага до
-            індивідуальних потреб кожного ✅ 45-хвилинні заняття — оптимальна
-            тривалість для ефективного навчання ✅ Система накопичувальних балів
-            — мотивація через досягнення
-          </p>
+          <div class="about-holder">
+            <div class="about-img-holder">
+              <img
+                src="./src/styles/img/Ms.Mariia.jpg"
+                alt="Mariia Bundzeliak-founder"
+                class="about-img"
+              />
+            </div>
+            <div class="about-text-holder">
+              <p class="about-text">
+                Мене звати Марія Бундзеляк. Я — педагог за покликанням, мама,
+                засновниця онлайн репетиторського центру та викладачка з більш
+                ніж 6-річним досвідом індивідуального онлайн-навчання.
+              </p>
+              <p class="about-text">
+                Я здобула вищу педагогічну освіту у Київському університеті
+                імені Бориса Грінченка, де навчалась протягом 5,5 років та
+                отримала ступінь магістра. Після завершення навчання працювала у
+                школі, але з появою дитини вирішила присвятити себе
+                репетиторству. Це дало мені можливість поєднувати улюблену
+                справу з материнством і водночас створити особливе освітнє
+                середовище для дітей.
+              </p>
+              <p class="about-text">
+                Моя мета — допомогти кожній дитині розкрити свій потенціал,
+                навчитися із задоволенням та впевнено рухатися вперед. Я
+                використовую сучасні методики, інтерактивні матеріали й
+                індивідуальний підхід, щоб зробити навчання цікавим, ефективним
+                та результативним.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <section id="courses" class="section-courses">
         <div class="container">
-          <h2 class="section-header">Ми пропонуємо:</h2>
+          <h2 class="section-header">Ми пропонуємо</h2>
+          <div class="courses-intro-wrapper">
+            <p class="intro-text">
+              У нашому навчальному центрі кожен курс - це не просто набір
+              занять, а продумана система, що працює на результат. Незалежно від
+              обраного напряму, ми гарантуємо:
+            </p>
+            <ul class="intro-list">
+              <li class="intro-item">
+                <span class="intro-span">Інтерактивні вправи</span> - діти
+                вчаться через гру та активну участь
+              </li>
+              <li class="intro-item">
+                <span class="intro-span">Персональний підхід</span> - увага до
+                індивідуальних потреб кожного
+              </li>
+              <li class="intro-item">
+                <span class="intro-span">45-хвилинні заняття</span> - оптимальна
+                тривалість для ефективного навчання
+              </li>
+              <li class="intro-item">
+                </svg>
+                <span class="intro-span">Система накопичувальних балів</span> -
+                мотивація через досягнення
+              </li>
+            </ul>
+          </div>
           <div class="courses-wrapper">
             <div class="courses-card">
               <h3 class="course-name">Курс швидкочитання</h3>
@@ -209,105 +258,37 @@
             Будь ласка, заповніть форму і ми обов'язково з Вами зв'яжемся!
           </p>
           <form action="#" class="enroll-form">
-            <div class="form-column">
-              <label for="name" class="form-label">Ваше ім'я:</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                class="form-input"
-                pattern="^[А-Яа-яІіЇїЄєҐґ'’\s]{4,}$"
-                placeholder="Наталя Петрівна"
-                autocomplete="name"
-                required
-              />
-              <label for="tel" class="form-label">Номер телефону:</label>
-              <input
-                type="tel"
-                name="telNumber"
-                id="tel"
-                class="form-input"
-                placeholder="+38(067)999-88-77"
-                autocomplete="tel"
-              />
-              <label for="email" class="form-label"
-                >Адреса електронної пошти:</label
-              >
-              <input
-                type="email"
-                name="email"
-                id="email"
-                class="form-input"
-                placeholder="example@example.com"
-                autocomplete="email"
-              />
-
-              <fieldset class="fieldset-wrapper">
-                <legend>Будь ласка, вкажіть бажаний метод зв'язку:</legend>
-
-                <label for="telephone" class="form-label-radio">
-                  <input
-                    type="radio"
-                    id="telephone"
-                    name="how-to-contact"
-                    class="form-input-radio"
-                  />Звичайний дзвінок
-                </label>
-
-                <div class="messenger-type-holder">
-                  <label for="messenger" class="form-label-radio">
-                    <input
-                      type="radio"
-                      name="how-to-contact"
-                      id="messenger"
-                      class="form-input-radio"
-                    />Месседжер
-                  </label>
-                  <label for="messenger-type" class="form-label-select">
-                    / Який саме?
-                    <select
-                      name="messenger"
-                      id="messenger-type"
-                      class="form-input-messenger"
-                    >
-                      <option value="telegram">Telegram</option>
-                      <option value="whatsApp">WhatsApp</option>
-                      <option value="viber">Viber</option>
-                    </select>
-                  </label>
-                </div>
-
-                <label for="radio-email" class="form-label-radio">
-                  <input
-                    type="radio"
-                    id="radio-email"
-                    name="how-to-contact"
-                    class="form-input-radio"
-                  />Електронна пошта</label
-                >
-              </fieldset>
-            </div>
-            <div class="form-column">
-              <label for="course" class="form-label" class="form-label"
-                >Обраний курс:</label
-              >
-              <select name="course" id="course" class="form-input">
-                <option value="reading">Курс швидкочитання</option>
-                <option value="pre-school">Підготовка до школи</option>
-                <option value="elem-school">Початкові класи 1-4</option>
-              </select>
-              <label for="comment" class="form-label"
-                >Чи є у вас якісь питання?</label
-              >
-              <textarea
-                name="comment"
-                id="comment"
-                class="form-input"
-                cols="30"
-                rows="10"
-                placeholder="Ваш коментар або питання"
-              ></textarea>
-            </div>
+            <label for="name" class="form-label">Ваше ім'я:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-input"
+              pattern="^[А-Яа-яІіЇїЄєҐґ'’\s]{4,}$"
+              placeholder="Наталя Петрівна"
+              autocomplete="name"
+              required
+            />
+            <label for="tel" class="form-label">Номер телефону:</label>
+            <input
+              type="tel"
+              name="telNumber"
+              id="tel"
+              class="form-input"
+              placeholder="+38(067)999-88-77"
+              autocomplete="tel"
+            />
+            <label for="email" class="form-label"
+              >Адреса електронної пошти:</label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-input"
+              placeholder="example@example.com"
+              autocomplete="email"
+            />
           </form>
         </div>
       </section>
