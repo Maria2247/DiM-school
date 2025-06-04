@@ -43,8 +43,10 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="logo-holder"><a href="/" class="logo">Д.і.М.</a></div>
+    <header class="header" id="top">
+      <div href="/" class="logo-holder-header">
+        <img src="./src/styles/img/logo-blue.svg" class="logo header-logo">
+      </div>
       <nav class="navigation">
         <ul class="nav-list">
           <li class="nav-item">
@@ -54,9 +56,9 @@
             <a href="#courses" class="nav-link">Курси</a>
           </li>
           <li class="nav-item">
-            <a href="#testimonials" class="nav-link">Відгуки</a>
-          </li>
-          <li class="nav-item"><a href="#pricing" class="nav-link">Ціни</a></li>
+           <a href="#testimonials" class="nav-link">Відгуки</a>
+         </li>
+          <li class="nav-item"><a href="#prices" class="nav-link">Ціни</a></li>
           <li class="nav-item">
             <a href="#enroll" class="nav-link cta-btn">Записатися</a>
           </li>
@@ -79,13 +81,6 @@
               <a href="#courses" class="learn-more-btn">Дізнатися більше</a>
             </div>
           </div>
-          <!-- <div class="hero-img-box">
-            <img
-              src="../src/styles/img/hero.jpg"
-              alt="girl studying online"
-              class="hero-img"
-            />
-          </div> -->
         </div>
       </section>
       <section class="section-about" id="about">
@@ -106,20 +101,10 @@
                 ніж 6-річним досвідом індивідуального онлайн-навчання.
               </p>
               <p class="about-text">
-                Я здобула вищу педагогічну освіту у Київському університеті
-                імені Бориса Грінченка, де навчалась протягом 5,5 років та
-                отримала ступінь магістра. Після завершення навчання працювала у
-                школі, але з появою дитини вирішила присвятити себе
-                репетиторству. Це дало мені можливість поєднувати улюблену
-                справу з материнством і водночас створити особливе освітнє
-                середовище для дітей.
+                Я здобула ступінь магістра педагогіки у Київському університеті імені Бориса Грінченка. Після завершення навчання працювала в школі, а з народженням дитини вирішила присвятити себе репетиторству. Це дозволило поєднати улюблену справу з материнством і створити особливе освітнє середовище для дітей.
               </p>
               <p class="about-text">
-                Моя мета — допомогти кожній дитині розкрити свій потенціал,
-                навчитися із задоволенням та впевнено рухатися вперед. Я
-                використовую сучасні методики, інтерактивні матеріали й
-                індивідуальний підхід, щоб зробити навчання цікавим, ефективним
-                та результативним.
+               Моєю метою є створення середовища, де кожна дитина вчиться із задоволенням, розкриває свій потенціал і впевнено рухається вперед. У своїй роботі я поєдную сучасні методики, інтерактивні матеріали та індивідуальний підхід, щоб навчання було цікавим і дієвим.
               </p>
             </div>
           </div>
@@ -136,6 +121,7 @@
             </p>
             <ul class="intro-list">
               <li class="intro-item">
+                
                 <span class="intro-span">Інтерактивні вправи</span> - діти
                 вчаться через гру та активну участь
               </li>
@@ -148,7 +134,6 @@
                 тривалість для ефективного навчання
               </li>
               <li class="intro-item">
-                </svg>
                 <span class="intro-span">Система накопичувальних балів</span> -
                 мотивація через досягнення
               </li>
@@ -160,26 +145,20 @@
               <p class="course-text">Читай у 2-3 рази швидше і краще:</p>
               <ul class="course-desc-list">
                 <li class="course-descr-item">
-                  <svg class="icon icon-arrow-right">
-                    <use
-                      xlink:href="./src/styles/img/symbol-defs.svg#icon-arrow-right2"
-                    ></use>
+                  <svg class="icon right-arrow-icon">
+                    <use xlink:href="./src/styles/img/icons.svg#icon-arrow-right"></use>
                   </svg>
                   Онлайн-формат - зручно будь-де
                 </li>
                 <li class="course-descr-item">
-                  <svg class="icon icon-arrow-right">
-                    <use
-                      xlink:href="./src/styles/img/symbol-defs.svg#icon-arrow-right2"
-                    ></use>
+                  <svg class="icon right-arrow-icon">
+                    <use xlink:href="./src/styles/img/icons.svg#icon-arrow-right"></use>
                   </svg>
                   Розвиток уваги, памʼяті, розуміння
                 </li>
                 <li class="course-descr-item">
-                  <svg class="icon icon-arrow-right">
-                    <use
-                      xlink:href="./src/styles/img/symbol-defs.svg#icon-arrow-right2"
-                    ></use>
+                  <svg class="icon right-arrow-icon">
+                    <use xlink:href="./src/styles/img/icons.svg#icon-arrow-right"></use>
                   </svg>
                   Результати вже за кілька занять
                 </li>
@@ -190,26 +169,20 @@
               <p class="course-text">Стартуй у школу з радістю:</p>
               <ul class="course-desc-list">
                 <li class="course-descr-item">
-                  <svg class="icon icon-arrow-right">
-                    <use
-                      xlink:href="./src/styles/img/symbol-defs.svg#icon-arrow-right2"
-                    ></use>
+                  <svg class="icon right-arrow-icon">
+                    <use xlink:href="./src/styles/img/icons.svg#icon-arrow-right"></use>
                   </svg>
                   Розвиток мовлення, читання, письма
                 </li>
                 <li class="course-descr-item">
-                  <svg class="icon icon-arrow-right">
-                    <use
-                      xlink:href="./src/styles/img/symbol-defs.svg#icon-arrow-right2"
-                    ></use>
+                  <svg class="icon right-arrow-icon">
+                    <use xlink:href="./src/styles/img/icons.svg#icon-arrow-right"></use>
                   </svg>
                   Поліпшення логіки, пам'яті, уваги
                 </li>
                 <li class="course-descr-item">
-                  <svg class="icon icon-arrow-right">
-                    <use
-                      xlink:href="./src/styles/img/symbol-defs.svg#icon-arrow-right2"
-                    ></use>
+                  <svg class="icon right-arrow-icon">
+                    <use xlink:href="./src/styles/img/icons.svg#icon-arrow-right"></use>
                   </svg>
                   Грайлива адаптація до режиму
                 </li>
@@ -222,26 +195,20 @@
               </p>
               <ul class="course-desc-list">
                 <li class="course-descr-item">
-                  <svg class="icon icon-arrow-right">
-                    <use
-                      xlink:href="./src/styles/img/symbol-defs.svg#icon-arrow-right2"
-                    ></use>
+                  <svg class="icon right-arrow-icon">
+                    <use xlink:href="./src/styles/img/icons.svg#icon-arrow-right"></use>
                   </svg>
                   Покращення успішності в школі
                 </li>
                 <li class="course-descr-item">
-                  <svg class="icon icon-arrow-right">
-                    <use
-                      xlink:href="./src/styles/img/symbol-defs.svg#icon-arrow-right2"
-                    ></use>
+                  <svg class="icon right-arrow-icon">
+                    <use xlink:href="./src/styles/img/icons.svg#icon-arrow-right"></use>
                   </svg>
                   Усунення прогалин у знаннях
                 </li>
                 <li class="course-descr-item">
-                  <svg class="icon icon-arrow-right">
-                    <use
-                      xlink:href="./src/styles/img/symbol-defs.svg#icon-arrow-right2"
-                    ></use>
+                  <svg class="icon right-arrow-icon">
+                    <use xlink:href="./src/styles/img/icons.svg#icon-arrow-right"></use>
                   </svg>
                   Допомога у виконанні домашніх завдань
                 </li>
@@ -251,47 +218,158 @@
         </div>
       </section>
 
-      <section id="enroll" class="section-enroll">
+      <section id="testimonials" class="section-testimonials">
         <div class="container">
-          <h3 class="section-header">Записатися легко!</h3>
-          <p class="section-text">
-            Будь ласка, заповніть форму і ми обов'язково з Вами зв'яжемся!
-          </p>
-          <form action="#" class="enroll-form">
-            <label for="name" class="form-label">Ваше ім'я:</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              class="form-input"
-              pattern="^[А-Яа-яІіЇїЄєҐґ'’\s]{4,}$"
-              placeholder="Наталя Петрівна"
-              autocomplete="name"
-              required
-            />
-            <label for="tel" class="form-label">Номер телефону:</label>
-            <input
-              type="tel"
-              name="telNumber"
-              id="tel"
-              class="form-input"
-              placeholder="+38(067)999-88-77"
-              autocomplete="tel"
-            />
-            <label for="email" class="form-label"
-              >Адреса електронної пошти:</label
-            >
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="form-input"
-              placeholder="example@example.com"
-              autocomplete="email"
-            />
-          </form>
-        </div>
+           <h2 class="section-header testimonials-header">Відгуки</h2>
+          <div class="testimonial-container">
+            <div class="testimonial-msg">
+              <p class="testimonial-name">
+                Clara
+              </p>
+              <p class="testimonial-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi asperiores dolor reprehenderit recusandae assumenda quos quidem maxime odio, incidunt reiciendis nulla! Doloremque recusandae vero voluptas eaque, officiis quo iusto deleniti?Lo</p>
+            </div>
+            <div class="testimonials-btn-holder">
+              <button type="button" class="testimonials-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon arrow-left">
+                  <path d="M15.75 19.5 8.25 12l7.5-7.5" />
+                </svg>
+              </button>
+              <button type="button" class="testimonials-btn"><svg class="icon arrow-right">
+                  <use
+                    xlink:href="./src/styles/img/symbol-defs.svg#icon-arrow-right"
+                    >
+                  </use>
+                  </svg>
+                </button>
+            </div>
+          </div>
       </section>
+
+      <div class="container two-sections-holder">
+        <section id="prices" class="section-prices">
+          <div class="prices-container">
+            <h2 class="section-header prices-header">Наші ціни</h2>
+            <ul class="prices-list">
+              <li class="prices-item">
+                <h3 class="prices-item-header">Пакет "Старт"</h3>
+                <div class="prices-txt-holder">
+                  <p class="prices-text-bold">
+                    4 заняття / місяць - 1200 грн (300 грн / 45 хв)
+                  </p>
+                  <p>Ідеально для ознайомлення та м'якого старту</p>
+                </div>
+              </li>
+              <li class="prices-item">
+                <h3 class="prices-item-header">Пакет "Прогрес"</h3>
+                <div class="prices-txt-holder">
+                  <p class="prices-text-bold">8 занять / місяць - 2320 грн (290 грн / 45 хв)</p>
+                  <p>Оптимальний баланс регулярності та вартості</p>
+                </div>
+              </li>
+              <li class="prices-item">
+                <h3 class="prices-item-header">Пакет "Успіх"</h3>
+                <div class="prices-txt-holder">
+                  <p class="prices-text-bold" >12 занять / місяць - 3360 грн (280 грн / 45 хв)</p>
+                  <p>Максимальний результат і економія</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="enroll" class="section-enroll">
+          <div class="enroll-container">
+            <h3 class="section-header">Записатися легко!</h3>
+            <p class="section-enroll-text">
+              Будь ласка, заповніть форму і ми обов'язково з Вами зв'яжемся!
+            </p>
+            <form action="#" class="enroll-form">
+              <label for="name" class="form-label">Ваше ім'я:</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-input"
+                pattern="^[A-Za-zА-Яа-яІіЇїЄєҐґ'’\s]{4,}$"
+                placeholder="Наталя Петрівна"
+                autocomplete="name"
+                required
+              />
+              <label for="tel" class="form-label">Номер телефону:</label>
+              <input
+                type="tel"
+                name="telNumber"
+                id="tel"
+                class="form-input"
+                placeholder="+38(067)999-88-77"
+                pattern="^\+38\(\d{3}\)\d{3}-\d{2}-\d{2}$"
+                autocomplete="tel"
+              />
+              <label for="email" class="form-label"
+                >Адреса електронної пошти:</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-input"
+                placeholder="example@example.com"
+                autocomplete="email"
+              />
+              <button type="submit" class="cta-btn form-btn">Надіслати</button>
+            </form>
+          </div>
+        </section>
+      </div>
+      <div>
+      </div>
+
+      <button href="#top" class="scroll-to-top">
+        <svg class="icon caret-up-icon">
+          <use xlink:href="./src/styles/img/icons.svg#icon-caret-up"></use>
+        </svg>
+      </button>
+
     </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div href="/" class="logo-holder-footer">
+          <img src="./src/styles/img/logo-beige.svg" class="footer-logo"/>
+        </div>
+        <div class="contact-holder">
+          <a href="tel:+380677213840" class="footer-tel-number">
+            <svg class="icon footer-tel-icon">
+              <use xlink:href="./src/styles/img/icons.svg#icon-phone"></use>
+            </svg>
+            +38(067)721-38-40</a>
+          <a href="mailto:dim-school@google.com" class="footer-email-address">
+            <svg class="icon footer-mail-icon">
+              <use xlink:href="./src/styles/img/icons.svg#icon-envelope"></use>
+            </svg>
+            mbundzelyak@gmail.com</a>
+            <div class="social-media-holder">
+              <a href="https://www.facebook.com/mariya.bundzeliak" class="facebook-link" target="_blank">
+                <svg class="icon icon-facebook">
+                  <use xlink:href="./src/styles/img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/tutor_for_children5_11_years" class="instagram-link" target="_blank">
+                <svg class="icon icon-instagram">
+                  <use xlink:href="./src/styles/img/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </div>
+        </div>
+        <div class="copyright">
+         <p class="copyright-text">
+          <svg class="icon icon-copyright">
+            <use xlink:href="./src/styles/img/icons.svg#icon-copyright"></use>
+            </svg>
+            Copyright 2025. Created by
+            <a href="http://www.linkedin.com/in/mariia-savchenko" class="developer-link" target="_blank">Mariia Savchenko</a>
+          </p> 
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>

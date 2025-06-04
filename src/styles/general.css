@@ -6,11 +6,11 @@
 
 :root {
   --bg-main: #cfddeb;
-  --color-blue: rgb(46, 74, 99);
-  /* --bg-btn-hover: #253b4f; */
-  /* --bg-secondary: rgba(241, 233,220, 0.8); */
+  --color-blue: #2e4a63;
+  --color-light-blue: #abb7c1;
   --color-beige: #f1e9dc;
   --color-light-beige: #fefdfc;
+  --color-accent: #eb6d80;
   --text-color: #444;
   --font-header: "Comfortaa", sans-serif;
   --font-text: "Nunito", sans-serif;
@@ -49,17 +49,32 @@ a {
   display: inline-block;
   color: inherit;
   text-decoration: none;
+  margin: 0;
 }
 
 ul,
 ol {
   list-style: none;
 }
+
+p,
+li {
+  font-size: 16px;
+}
+
 input {
   display: inline-block;
 }
+
 button {
   cursor: pointer;
+  border: none;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  padding: 12px 0;
 }
 
 .container {
@@ -71,12 +86,10 @@ button {
 .cta-btn {
   padding: 12px 24px;
   border-radius: 6px;
+  font-size: 20px;
   background-color: var(--color-blue);
   color: var(--color-beige);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* font-family: var(--font-accent);
-  font-weight: 600;
-  font-size: 32px; */
 }
 
 .cta-btn:hover,
@@ -84,9 +97,45 @@ button {
   background-color: var(--color-beige);
   color: var(--color-blue);
   box-shadow: inset 0 0 4px var(--color-blue);
-  /* border-bottom: none; */
 }
 
 .cta-btn:active {
   box-shadow: inset 0 0 12px var(--color-blue);
+}
+
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  fill: var(--text-color);
+  vertical-align: middle;
+}
+
+/**************/
+/* SCROLL-TO-TOP*/
+/**************/
+
+.scroll-to-top {
+  visibility: hidden;
+  position: absolute;
+  right: 140px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(241, 233, 220, 0.6);
+}
+
+.scroll-to-top:hover,
+.scroll-to-top:focus {
+  box-shadow: inset 0 0 4px var(--color-blue);
+}
+
+.scroll-to-top:active {
+  box-shadow: inset 0 0 12px var(--color-blue);
+}
+
+.icon.caret-up-icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
 }
