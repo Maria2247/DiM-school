@@ -342,7 +342,7 @@
   display: flex;
   justify-content: space-between;
   gap: 38px;
-  padding: 48px 32px;
+  padding: 24px 32px 24px;
   margin-top: 44px;
   border-top-right-radius: 8px;
   background-image: linear-gradient(
@@ -360,14 +360,11 @@
 /**************/
 .section-prices {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .container .prices-container {
   flex: 1;
-  padding: 24px 24px;
+  padding: 64px 24px 24px;
 }
 
 .section-header.prices-header {
@@ -407,8 +404,7 @@
   flex: 1;
 }
 .enroll-container {
-  padding: 24px 0 24px 32px;
-  justify-self: flex-end;
+  padding: 64px 0 24px 68px;
   margin: 0 auto;
 }
 .section-enroll .section-header {
@@ -417,7 +413,7 @@
 .section-enroll-text {
   max-width: 580px;
   margin-bottom: 32px;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -489,6 +485,7 @@
   flex-direction: column;
   gap: 16px;
   margin-bottom: 24px;
+  margin-left: 24px;
   font-size: 16px;
 }
 
@@ -511,7 +508,7 @@
 .icon.icon-instagram {
   width: 36px;
   height: 36px;
-  fill: var(--color-light-beige);
+  fill: var(--color-beige);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
