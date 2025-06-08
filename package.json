@@ -2,6 +2,7 @@
   "dependencies": {
     "accordion-js": "^3.4.1",
     "modern-normalize": "^3.0.1",
-    "svgxuse": "^1.2.6"
+    "svgxuse": "^1.2.6",
+    "swiper": "^11.2.8"
   }
 }

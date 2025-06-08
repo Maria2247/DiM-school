@@ -111,13 +111,14 @@
 }
 
 .main-header {
-  font-size: 48px;
+  font-size: 44px;
   line-height: 1.2;
   margin-bottom: 36px;
 }
 .hero-text {
+  max-width: 550px;
   font-size: 24px;
-  line-height: 2;
+  line-height: 1.5;
   font-weight: 600;
   margin-bottom: 48px;
 }
@@ -299,6 +300,11 @@
   /* flex: 1; */
   padding: 48px 0;
 }
+
+.container.testimonials-container {
+  max-width: 800px;
+  padding: 0 24px;
+}
 .testimonials-header {
   visibility: hidden;
   font-size: 12px;
@@ -310,6 +316,23 @@
   font-size: 38px;
   font-weight: 800;
   margin-bottom: 32px;
+}
+
+.swiper {
+  /* padding: 0 150px; */
+  box-shadow: 3px 3px 8px rgba(46, 74, 99, 0.3);
+  border-radius: 8px;
+}
+
+.swiper-slide .slide-txt-wrapper {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 50px;
+  font-size: 16px;
+  background: rgba(254, 253, 252, 0.2);
 }
 
 .testimonials-btn-holder {

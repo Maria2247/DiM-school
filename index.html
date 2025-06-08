@@ -40,6 +40,7 @@
     <link rel="stylesheet" href="./src/styles/general.css" />
     <link rel="stylesheet" href="./src/styles/style.css" />
     <link rel="stylesheet" href="./src/styles/queries.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
 
   <body>
@@ -219,29 +220,56 @@
       </section>
 
       <section id="testimonials" class="section-testimonials">
-        <div class="container">
+        <div class="container testimonials-container">
            <h2 class="section-header testimonials-header">Відгуки</h2>
-          <div class="testimonial-container">
-            <div class="testimonial-msg">
-              <p class="testimonial-name">
-                Clara
-              </p>
-              <p class="testimonial-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi asperiores dolor reprehenderit recusandae assumenda quos quidem maxime odio, incidunt reiciendis nulla! Doloremque recusandae vero voluptas eaque, officiis quo iusto deleniti?Lo</p>
+          <div class="swiper" pagination="true" pagination-clickable="true" navigation="true">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide-txt-wrapper">
+                  <p class="testimonial-name">
+                  Simona
+                  </p>
+                  <p class="testimonial-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi asperiores dolor reprehenderit recusandae assumenda quos quidem maxime odio, incidunt reiciendis nulla! Doloremque recusandae vero voluptas eaque, officiis quo iusto deleniti?Lo
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <p class="testimonial-name">
+                Beata
+                </p>
+                <p class="testimonial-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi asperiores dolor reprehenderit recusandae assumenda quos quidem maxime odio, incidunt reiciendis nulla! Doloremque recusandae vero voluptas eaque, officiis quo iusto deleniti?Lo
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <p class="testimonial-name">
+                Lorena
+                </p>
+                <p class="testimonial-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi asperiores dolor reprehenderit recusandae assumenda quos quidem maxime odio, incidunt reiciendis nulla! Doloremque recusandae vero voluptas eaque, officiis quo iusto deleniti?Lo
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <p class="testimonial-name">
+                Lina
+                </p>
+                <p class="testimonial-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi asperiores dolor reprehenderit recusandae assumenda quos quidem maxime odio, incidunt reiciendis nulla! Doloremque recusandae vero voluptas eaque, officiis quo iusto deleniti?Lo
+                </p>
+              </div>
             </div>
-            <div class="testimonials-btn-holder">
-              <button type="button" class="testimonials-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon arrow-left">
-                  <path d="M15.75 19.5 8.25 12l7.5-7.5" />
+            <div class="swiper-button-prev">
+              <!-- <button type="button" class="testimonials-btn">
+                <svg class="icon arrow-left">
+                  <use xlink:href="./src/styles/img/icons.svg#icon-caret-left"></use>
                 </svg>
-              </button>
-              <button type="button" class="testimonials-btn"><svg class="icon arrow-right">
-                  <use
-                    xlink:href="./src/styles/img/symbol-defs.svg#icon-arrow-right"
-                    >
-                  </use>
-                  </svg>
-                </button>
+              </button> -->
             </div>
+            <div class="swiper-button-next">
+              <!-- <button type="button" class="testimonials-btn">
+                <svg class="icon arrow-right">
+                 <use xlink:href="./src/styles/img/icons.svg#icon-caret-right"></use>
+                </svg>
+              </button> -->
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
       </section>
 
@@ -282,7 +310,7 @@
             <p class="section-enroll-text">
               Будь ласка, заповніть форму і ми обов'язково з Вами зв'яжемся!
             </p>
-            <form action="#" class="enroll-form">
+            <form action="https://formsubmit.co/mbundzelyak@gmail.com" method="POST" class="enroll-form">
               <label for="name" class="form-label">Ваше ім'я:</label>
               <input
                 type="text"
@@ -373,3 +401,4 @@
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>
+
