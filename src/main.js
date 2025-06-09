@@ -1,28 +1,26 @@
-// import Swiper from "swiper";
-// import { Navigation, Pagination } from "swiperr/modules";
-// import "swiper/css";
-// import "swiper/css/naigation";
-
-// // TESTIMONIALS CONTAINER
-
-// const swiper = new Swiper(".swiper", {
-//   slidesPerView: 1,
-//   spaceBetween: 30,
-//   loop: true,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   speed: 400,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
+// TESTIMONIALS CONTAINER
+document.addEventListener("DOMContentLoaded", () => {
+  const swiper = new Swiper(".swiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    speed: 1000,
+    loop: true,
+    autoplay: {
+      delay: 10000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".icon-next",
+      prevEl: ".icon-prev",
+    },
+  });
+});
 
 // SCROLL-TO-TOP-BTN
-
-document.addEventListener("DOMContentLoaded", () => {});
 
 let scrollBtn = document.getElementById("scrollBtn");
 
@@ -52,3 +50,14 @@ function topFunction() {
 }
 
 scrollBtn.addEventListener("click", topFunction);
+
+// CLEAN HASH ON RELOAD
+
+window.addEventListener("load", () => {
+  window.scrollTo(0, 0);
+  history.pushState(
+    "",
+    document.title,
+    window.location.pathname + window.location.search
+  );
+});
