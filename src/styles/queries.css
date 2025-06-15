@@ -1,0 +1,703 @@
+@media only screen and (min-width: 360px) {
+  /**************/
+  /* HERO*/
+  /**************/
+
+  .hero-container {
+    height: 750px;
+  }
+
+  .hero-img-box {
+    top: 0;
+  }
+
+  .hero-text-box {
+    top: 200px;
+  }
+
+  .hero-text {
+    max-width: 320px;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .hero-text-box {
+    top: 220px;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .hero-img-box {
+    top: -20px;
+  }
+
+  .swiper {
+    height: 600px;
+  }
+
+  .courses-wrapper {
+    align-items: center;
+  }
+  .courses-card {
+    width: 100%;
+    max-width: 350px;
+    min-height: 340px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    max-width: 700px;
+  }
+  .logo-holder-header {
+    max-width: 100px;
+  }
+  .logo.header-logo {
+    padding-top: 16px;
+  }
+
+  .burger-menu-btn {
+    display: none;
+  }
+
+  .navigation {
+    position: static;
+    padding-top: 18px;
+    transform: translateX(0);
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    background-color: transparent;
+    pointer-events: auto;
+    z-index: 1;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    margin-top: 0;
+  }
+  .nav-link {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .nav-link.cta-btn {
+    margin-top: 0;
+  }
+  .nav-item .cta-btn {
+    padding: 8px 18px;
+  }
+
+  /*************/
+  /* HERO*/
+  /**************/
+  .section-hero {
+    padding: 34px 0;
+  }
+  .hero-container {
+    height: 500px;
+    /* padding: 32px 0; */
+    border-radius: 0;
+    border-radius: 8px;
+  }
+  .hero-img-box {
+    position: absolute;
+    right: -10%;
+    top: -10%;
+    width: 800px;
+    height: 550px;
+  }
+  .hero-text-box {
+    max-width: 400px;
+    height: 550px;
+    top: 0;
+    background: linear-gradient(
+      to right,
+      rgba(241, 233, 220, 1) 0%,
+      rgba(241, 233, 220, 1) 60%,
+      rgba(241, 233, 220, 0.8) 75%,
+      rgba(241, 233, 220, 0.5) 90%,
+      rgba(241, 233, 220, 0) 100%
+    );
+    text-align: left;
+  }
+  .main-header {
+    max-width: 350px;
+    margin-left: 0;
+    padding-left: 20px;
+    font-size: 44px;
+    line-height: 1.2;
+  }
+  .hero-text {
+    max-width: 350px;
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    margin-left: 0;
+    padding-left: 20px;
+  }
+  .hero-span-text {
+    padding-left: 20px;
+  }
+  .hero-btn-holder {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    transform: translateX(0);
+    flex-direction: row;
+  }
+
+  /**************/
+  /* ABOUT US*/
+  /**************/
+  .section-about {
+    padding: 34px 0;
+  }
+  .about-holder {
+    gap: 32px;
+  }
+
+  .section-header {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+
+  .about-holder {
+    flex-direction: row;
+  }
+
+  .about-img-holder {
+    max-width: 350px;
+    flex: 3;
+    padding: 32px;
+    gap: 10px;
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+
+  .about-text:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  /**************/
+  /* COURSES*/
+  /**************/
+  .section-courses {
+    padding: 32px 0;
+  }
+
+  .courses-intro-wrapper {
+    margin-bottom: 36px;
+    padding: 0 16px;
+  }
+
+  .intro-list {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .intro-item {
+    font-size: 18px;
+    border-bottom: 1px solid #888;
+  }
+
+  .courses-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+  }
+
+  .courses-wrapper {
+    align-items: stretch;
+  }
+
+  .courses-card:hover {
+    transform: translateY(-18px);
+    box-shadow: 0 12px 24px rgba(46, 74, 99, 0.5);
+  }
+  .course-name {
+    font-family: var(--font-accent);
+    text-align: center;
+    font-size: 36px;
+  }
+
+  /**************/
+  /* TESTIMONIALS*/
+  /**************/
+  .section-testimonials {
+    padding: 0 0 32px 0;
+    /* padding: 48px 0; */
+  }
+
+  .container.testimonials-container {
+    max-width: 550px;
+    padding: 0 20px;
+    z-index: 1;
+  }
+
+  .testimonial-name {
+    font-size: 38px;
+    margin-bottom: 24px;
+  }
+
+  .swiper {
+    height: 600px;
+  }
+
+  .swiper-slide .slide-txt-wrapper {
+    padding: 24px 80px 44px;
+  }
+
+  .swiper-button-next.icon-next,
+  .swiper-button-prev.icon-prev {
+    top: 50%;
+  }
+  .swiper-button-next.icon-next {
+    right: 20px;
+  }
+
+  .swiper-button-prev.icon-prev {
+    left: 20px;
+  }
+
+  .swiper-pagination {
+    display: block;
+  }
+
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: var(--color-blue);
+  }
+
+  /**************/
+  /* TWO SECTIONS HOLDER*/
+  /**************/
+  .two-sections-holder {
+    height: auto;
+  }
+
+  /**************/
+  /* PRICES*/
+  /**************/
+
+  .container .prices-container {
+    padding: 64px 24px 24px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .section-header.prices-header {
+    margin-bottom: 24px;
+  }
+
+  .prices-txt-holder {
+    margin-bottom: 16px;
+  }
+
+  .prices-txt-holder p {
+    font-size: 20px;
+  }
+
+  .prices-item-header::before,
+  .prices-item-header::after {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  /**************/
+  /* CONTACT FORM*/
+  /**************/
+
+  .enroll-container {
+    padding: 34px 24px 24px;
+  }
+
+  .section-enroll .section-header {
+    margin-bottom: 24px;
+  }
+  .section-enroll-text {
+    font-size: 24px;
+    max-width: 500px;
+    margin: 0 auto 44px;
+  }
+
+  .enroll-form {
+    width: 420px;
+    margin: 0 auto;
+  }
+  .form-label {
+    font-size: 20px;
+  }
+
+  .form-btn {
+    font-size: 24px;
+  }
+  /**************/
+  /* FOOTER*/
+  /**************/
+
+  .logo-holder-footer {
+    width: 150px;
+  }
+
+  .container.footer-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 44px;
+  }
+
+  .contact-holder {
+    margin-left: 24px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /**************/
+  /* HEADER */
+  /**************/
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1024px;
+    padding: 0 32px;
+    margin: 0 auto;
+  }
+
+  .logo-holder-header {
+    flex: 2;
+    max-width: 150px;
+  }
+  .logo.header-logo {
+    padding-top: 24px;
+    vertical-align: middle;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .nav-link {
+    padding: 8px 8px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .nav-item:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-blue);
+    opacity: 0;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav-item:not(:last-child):hover:after,
+  .nav-item:not(:last-child):focus:after {
+    opacity: 1;
+  }
+
+  .nav-item:not(:last-child):active:after {
+    background-color: var(--color-beige);
+  }
+
+  .nav-item .cta-btn {
+    padding: 8px 24px;
+  }
+
+  .nav-item:not(:last-child) {
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav-item:not(:last-child):hover,
+  .nav-item:not(:last-child):focus {
+    color: var(--color-blue);
+  }
+
+  .nav-item:not(:last-child):active {
+    color: var(--color-beige);
+  }
+
+  /**************/
+  /* HERO*/
+  /**************/
+
+  .section-hero {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .hero-container {
+    height: 600px;
+  }
+
+  .hero-img-box {
+    top: 0;
+    right: -5%;
+    height: 600px;
+    overflow: hidden;
+  }
+
+  .hero-text-box {
+    max-width: 600px;
+    padding: 32px;
+    height: 600px;
+    background-image: linear-gradient(
+      to right,
+      rgba(241, 233, 220, 1) 50%,
+      rgba(241, 233, 220, 0.8) 70%,
+      rgba(241, 233, 220, 0.5) 80%,
+      rgba(241, 233, 220, 0.2) 90%,
+      rgba(241, 233, 220, 0) 100%
+    );
+  }
+
+  .main-header {
+    max-width: 450px;
+    margin-bottom: 32px;
+  }
+
+  .hero-text {
+    max-width: 400px;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  .hero-span-text {
+    font-size: 44px;
+  }
+
+  .hero-btn-holder {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+  }
+
+  .cta-btn.btn-light-bg {
+    padding: 12px 24px;
+    font-size: 24px;
+  }
+
+  .learn-more-btn {
+    padding: 12px 24px;
+    font-size: 26px;
+  }
+
+  /**************/
+  /* ABOUT US*/
+  /**************/
+  .section-about {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .about-img-holder {
+    max-width: 400px;
+  }
+
+  .about-text {
+    font-size: 18px;
+  }
+
+  /**************/
+  /* COURSES*/
+  /**************/
+  .section-courses {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .intro-list {
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    gap: 8px;
+    max-width: 1000px;
+  }
+  .intro-item {
+    width: calc((100% - 32px) / 4);
+    font-size: 20px;
+    padding-left: 12px;
+    border-left: 1px solid #888;
+    border-bottom: none;
+  }
+
+  .intro-span {
+    font-weight: 800;
+  }
+  .courses-wrapper {
+    gap: 20px;
+  }
+
+  .courses-card {
+    width: calc((100% - 40px) / 3);
+    padding: 24px;
+  }
+
+  .course-text {
+    font-size: 18px;
+  }
+
+  .course-descr-item {
+    font-size: 18px;
+  }
+
+  /**************/
+  /* TESTIMONIALS*/
+  /**************/
+  .section-testimonials {
+    padding: 0 0 32px 0;
+  }
+
+  .container.testimonials-container {
+    max-width: 600px;
+    padding: 0 24px;
+  }
+
+  .testimonials-header {
+    visibility: hidden;
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .swiper {
+    height: 700px;
+  }
+
+  .swiper-slide .slide-txt-wrapper {
+    height: 650px;
+  }
+
+  .testimonial-name {
+    font-family: var(--font-accent);
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 24px;
+  }
+
+  .testimonial-text {
+    font-size: 18px;
+  }
+
+  /**************/
+  /* TWO SECTIONS HOLDER*/
+  /**************/
+  .two-sections-holder {
+    max-width: 1024px;
+    flex-direction: row;
+    gap: 38px;
+    padding: 24px 32px 24px;
+    border-top-right-radius: 8px;
+    background-image: linear-gradient(
+      to left,
+      rgba(241, 233, 220, 1) 0%,
+      rgba(241, 233, 220, 0.8) 20%,
+      rgba(241, 233, 220, 0.6) 50%,
+      rgba(241, 233, 220, 0.2) 80%,
+      rgba(241, 233, 220, 0) 100%
+    );
+  }
+
+  /**************/
+  /* PRICES*/
+  /**************/
+
+  .container .prices-container {
+    flex: 2;
+    padding: 0 12px 0;
+  }
+
+  .prices-txt-holder p {
+    font-size: 18px;
+  }
+
+  .section-header.prices-header {
+    text-align: left;
+  }
+
+  /**************/
+  /* CONTACT FORM*/
+  /**************/
+
+  .enroll-container {
+    padding: 0 0 24px 68px;
+    margin: 0 auto;
+    flex: 1;
+  }
+  .section-enroll .section-header {
+    text-align: left;
+    margin: 0 0 24px;
+  }
+  .section-enroll-text {
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 44px;
+  }
+
+  .enroll-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 12px;
+    width: 100%;
+  }
+
+  .form-label {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .form-input {
+    padding: 12px 24px;
+    margin-bottom: 24px;
+  }
+
+  .form-input::placeholder {
+    font-size: 20px;
+  }
+
+  /**************/
+  /* FOOTER*/
+  /**************/
+
+  .container.footer-container {
+    max-width: 1024px;
+    padding: 0 68px;
+  }
+
+  .logo-holder-footer {
+    width: 200px;
+    margin-bottom: 32px;
+  }
+
+  .contact-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-media-holder {
+    margin-left: 24px;
+  }
+
+  .copyright {
+    text-align: left;
+  }
+
+  /**************/
+  /* MODAL*/
+  /**************/
+
+  .modal-discount,
+  .modal-thank-you {
+    width: 500px;
+  }
+
+  .scroll-to-top {
+    right: 30px;
+  }
+}

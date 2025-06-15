@@ -1,15 +1,42 @@
-// GETTING ELEMENTS
-
 const modalBackDrop = document.getElementById("modal");
 const modalDiscount = document.getElementById("modal-discount");
 const modalThankYou = document.getElementById("modal-thank-you");
 const scrollBtn = document.getElementById("scrollBtn");
 const btnClose = document.querySelectorAll(".close-btn");
-const modalEnrollBtn = document.getElementById("close-upon-enroll");
+const modalEnrollBtn = document.querySelectorAll(".close-upon-enroll");
 const enrollSection = document.getElementById("enroll");
 const form = document.querySelector(".enroll-form");
 const submitFormBtn = document.querySelector(".form-btn");
-const telInput = document.getElementById("tel");
+
+// MOBILE MENU
+const burgerBtn = document.getElementById("burger-btn");
+const headerMenu = document.getElementById("header-nav");
+const closeMobBtn = document.querySelector(".close-mob-nav");
+const navLink = document.querySelectorAll(".nav-item a");
+
+burgerBtn.addEventListener("click", () => {
+  headerMenu.classList.add("nav-open");
+  closeMobBtn.classList.add("nav-open");
+});
+
+function closeMobileNav(e) {
+  e.preventDefault();
+  headerMenu.classList.remove("nav-open");
+  closeMobBtn.classList.remove("nav-open");
+
+  const href = e.currentTarget.getAttribute("href");
+  if (href !== "#" && href.startsWith("#")) {
+    const sectionEl = document.querySelector(href);
+
+    sectionEl.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+navLink.forEach((link) => {
+  link.addEventListener("click", closeMobileNav);
+});
+
+closeMobBtn.addEventListener("click", closeMobileNav);
 
 // TESTIMONIALS CONTAINER
 document.addEventListener("DOMContentLoaded", () => {
@@ -18,9 +45,18 @@ document.addEventListener("DOMContentLoaded", () => {
     spaceBetween: 30,
     speed: 1000,
     loop: true,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      draggable: true,
+    },
     autoplay: {
       delay: 10000,
       disableOnInteraction: false,
+    },
+    followFinger: true,
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
     },
     pagination: {
       el: ".swiper-pagination",
@@ -84,15 +120,19 @@ function closeModal(e) {
 }
 
 btnClose.forEach((btn) => btn.addEventListener("click", closeModal));
+
 // CLOSE-UPON-ENROLL
 
-modalEnrollBtn.addEventListener("click", (e) => {
+function closeUponEnroll(e) {
   e.preventDefault();
 
   modalBackDrop.classList.remove("is-open");
   modalDiscount.classList.remove("is-open");
+
   enrollSection.scrollIntoView();
-});
+}
+
+modalEnrollBtn.forEach((btn) => btn.addEventListener("click", closeUponEnroll));
 
 // THANK YOU MODAL
 
@@ -127,17 +167,3 @@ form.addEventListener("submit", (e) => {
     })
     .catch((error) => console.log("Error", error));
 });
-
-// TEL INPUT FORMATTER
-
-// telInput.addEventListener("input", (e) => {
-//   let value = e.target.value.replace(/\D/g, "");
-
-//   if (value.startsWith("38")) {
-//     value = value.slice(2);
-//   }
-
-//   if (value.length > 10) value = value.slice(0, 10);
-
-//   const formatted = ``;
-// });

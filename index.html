@@ -40,49 +40,88 @@
     <link rel="stylesheet" href="./src/styles/general.css" />
     <link rel="stylesheet" href="./src/styles/style.css" />
     <link rel="stylesheet" href="./src/styles/queries.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
     <header class="header" id="top">
-      <div href="/" class="logo-holder-header">
-        <img src="./src/styles/img/logo-blue.svg" class="logo header-logo">
+      <div class="logo-holder-header">
+        <img
+          src="./src/styles/img/logo-blue.svg"
+          class="logo header-logo"
+          alt="school logo"
+        />
       </div>
-      <nav class="navigation">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="#about" class="nav-link">Про нас</a>
-          </li>
-          <li class="nav-item">
-            <a href="#courses" class="nav-link">Курси</a>
-          </li>
-          <li class="nav-item">
-           <a href="#testimonials" class="nav-link">Відгуки</a>
-         </li>
-          <li class="nav-item"><a href="#prices" class="nav-link">Ціни</a></li>
-          <li class="nav-item">
-            <a href="#enroll" class="nav-link cta-btn">Записатися</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header-nav-menu">
+        <nav id="header-nav" class="navigation">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#about" class="nav-link">Про нас</a>
+            </li>
+            <li class="nav-item">
+              <a href="#courses" class="nav-link">Курси</a>
+            </li>
+            <li class="nav-item">
+              <a href="#testimonials" class="nav-link">Відгуки</a>
+            </li>
+            <li class="nav-item">
+              <a href="#prices" class="nav-link">Ціни</a>
+            </li>
+            <li class="nav-item">
+              <a href="#enroll" class="nav-link cta-btn">Записатися</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Бургер Меню -->
+        <button id="burger-btn" class="burger-menu-btn">
+          <svg class="icon burger-icon">
+            <use xlink:href="./src/styles/img/icons.svg#icon-list"></use>
+          </svg>
+        </button>
+        <button class="close-mob-nav">
+          <svg class="icon close-nav-icon">
+            <use xlink:href="./src/styles/img/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
     </header>
+
     <main>
       <section class="section-hero">
         <div class="container">
-          <div class="hero-text-box">
-            <h1 class="main-header">
-              Ласкаво просимо до онлайн репетиторського центру Д.і.М.
-            </h1>
-            <p class="hero-text">
-              Додаткові заняття для учнів початкових класів та підготовки до
-              школи з досвідченими педагогами. <br />Інтерактивно. Весело.
-            </p>
+          <div class="hero-container">
+            <div class="hero-img-box">
+              <div class="box-shadow"></div>
+              <picture>
+                <!-- <source
+                  srcset="./src/styles/img/hero-small.webp"
+                  type="image/webp"
+                  media="(min-width: 320px)"
+                /> -->
+                <source srcset="./src/styles/img/hero.webp" type="image/webp" />
+                <img
+                  src="./src/styles/img/hero.JPG"
+                  alt="A girl during the lesson"
+                  class="hero-img"
+                />
+              </picture>
+            </div>
+            <div class="hero-text-box">
+              <h1 class="main-header">
+                Ласкаво просимо до онлайн центру Д.і.М.
+              </h1>
+              <p class="hero-text">
+                Додаткові заняття для учнів початкових класів та підготовка до
+                школи з досвідченими педагогами.
+              </p>
+              <p class="hero-span-text">Інтерактивно. Весело.</p>
+            </div>
             <div class="hero-btn-holder">
               <a href="#enroll" class="cta-btn btn-light-bg">Записатися</a>
-              <a href="#courses" class="learn-more-btn">Дізнатися більше</a>
+              <a href="#courses" class="learn-more-btn">Детальніше</a>
             </div>
           </div>
         </div>
@@ -105,10 +144,18 @@
                 ніж 6-річним досвідом індивідуального онлайн-навчання.
               </p>
               <p class="about-text">
-                Я здобула ступінь магістра педагогіки у Київському університеті імені Бориса Грінченка. Після завершення навчання працювала в школі, а з народженням дитини вирішила присвятити себе репетиторству. Це дозволило поєднати улюблену справу з материнством і створити особливе освітнє середовище для дітей.
+                Я здобула ступінь магістра педагогіки у Київському університеті
+                імені Бориса Грінченка. Після завершення навчання працювала в
+                школі, а з народженням дитини вирішила присвятити себе
+                репетиторству. Це дозволило поєднати улюблену справу з
+                материнством і створити особливе освітнє середовище для дітей.
               </p>
               <p class="about-text">
-               Моєю метою є створення середовища, де кожна дитина вчиться із задоволенням, розкриває свій потенціал і впевнено рухається вперед. У своїй роботі я поєдную сучасні методики, інтерактивні матеріали та індивідуальний підхід, щоб навчання було цікавим і дієвим.
+                Моєю метою є створення середовища, де кожна дитина вчиться із
+                задоволенням, розкриває свій потенціал і впевнено рухається
+                вперед. У своїй роботі я поєдную сучасні методики, інтерактивні
+                матеріали та індивідуальний підхід, щоб навчання було цікавим і
+                дієвим.
               </p>
             </div>
           </div>
@@ -116,7 +163,7 @@
       </section>
       <section id="courses" class="section-courses">
         <div class="container">
-          <h2 class="section-header">Ми пропонуємо</h2>
+          <h2 class="section-header">Пропонуємо</h2>
           <div class="courses-intro-wrapper">
             <p class="intro-text">
               У нашому навчальному центрі кожен курс - це не просто набір
@@ -125,7 +172,10 @@
             </p>
             <ul class="intro-list">
               <li class="intro-item">
-                
+                <span class="intro-span">45-хвилинні заняття</span> - оптимальна
+                тривалість для ефективності
+              </li>
+              <li class="intro-item">
                 <span class="intro-span">Інтерактивні вправи</span> - діти
                 вчаться через гру та активну участь
               </li>
@@ -133,10 +183,7 @@
                 <span class="intro-span">Персональний підхід</span> - увага до
                 індивідуальних потреб кожного
               </li>
-              <li class="intro-item">
-                <span class="intro-span">45-хвилинні заняття</span> - оптимальна
-                тривалість для ефективного навчання
-              </li>
+
               <li class="intro-item">
                 <span class="intro-span">Система накопичувальних балів</span> -
                 мотивація через досягнення
@@ -150,19 +197,25 @@
               <ul class="course-desc-list">
                 <li class="course-descr-item">
                   <svg class="icon right-arrow-icon">
-                    <use xlink:href="./src/styles/img/icons.svg#icon-arrow-right"></use>
+                    <use
+                      xlink:href="./src/styles/img/icons.svg#icon-arrow-right"
+                    ></use>
                   </svg>
                   Онлайн-формат - зручно будь-де
                 </li>
                 <li class="course-descr-item">
                   <svg class="icon right-arrow-icon">
-                    <use xlink:href="./src/styles/img/icons.svg#icon-arrow-right"></use>
+                    <use
+                      xlink:href="./src/styles/img/icons.svg#icon-arrow-right"
+                    ></use>
                   </svg>
                   Розвиток уваги, памʼяті, розуміння
                 </li>
                 <li class="course-descr-item">
                   <svg class="icon right-arrow-icon">
-                    <use xlink:href="./src/styles/img/icons.svg#icon-arrow-right"></use>
+                    <use
+                      xlink:href="./src/styles/img/icons.svg#icon-arrow-right"
+                    ></use>
                   </svg>
                   Результати вже за кілька занять
                 </li>
@@ -174,19 +227,25 @@
               <ul class="course-desc-list">
                 <li class="course-descr-item">
                   <svg class="icon right-arrow-icon">
-                    <use xlink:href="./src/styles/img/icons.svg#icon-arrow-right"></use>
+                    <use
+                      xlink:href="./src/styles/img/icons.svg#icon-arrow-right"
+                    ></use>
                   </svg>
                   Розвиток мовлення, читання, письма
                 </li>
                 <li class="course-descr-item">
                   <svg class="icon right-arrow-icon">
-                    <use xlink:href="./src/styles/img/icons.svg#icon-arrow-right"></use>
+                    <use
+                      xlink:href="./src/styles/img/icons.svg#icon-arrow-right"
+                    ></use>
                   </svg>
                   Поліпшення логіки, пам'яті, уваги
                 </li>
                 <li class="course-descr-item">
                   <svg class="icon right-arrow-icon">
-                    <use xlink:href="./src/styles/img/icons.svg#icon-arrow-right"></use>
+                    <use
+                      xlink:href="./src/styles/img/icons.svg#icon-arrow-right"
+                    ></use>
                   </svg>
                   Грайлива адаптація до режиму
                 </li>
@@ -200,19 +259,25 @@
               <ul class="course-desc-list">
                 <li class="course-descr-item">
                   <svg class="icon right-arrow-icon">
-                    <use xlink:href="./src/styles/img/icons.svg#icon-arrow-right"></use>
+                    <use
+                      xlink:href="./src/styles/img/icons.svg#icon-arrow-right"
+                    ></use>
                   </svg>
                   Покращення успішності в школі
                 </li>
                 <li class="course-descr-item">
                   <svg class="icon right-arrow-icon">
-                    <use xlink:href="./src/styles/img/icons.svg#icon-arrow-right"></use>
+                    <use
+                      xlink:href="./src/styles/img/icons.svg#icon-arrow-right"
+                    ></use>
                   </svg>
                   Усунення прогалин у знаннях
                 </li>
                 <li class="course-descr-item">
                   <svg class="icon right-arrow-icon">
-                    <use xlink:href="./src/styles/img/icons.svg#icon-arrow-right"></use>
+                    <use
+                      xlink:href="./src/styles/img/icons.svg#icon-arrow-right"
+                    ></use>
                   </svg>
                   Допомога у виконанні домашніх завдань
                 </li>
@@ -224,61 +289,130 @@
 
       <section id="testimonials" class="section-testimonials">
         <div class="container testimonials-container">
-           <h2 class="section-header testimonials-header">Відгуки</h2>
+          <h2 class="section-header testimonials-header">Відгуки</h2>
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="slide-txt-wrapper">
-                  <p class="testimonial-name">
-                  Iryna Kunitska <span class="testimonials-span">(зі сторінки <a href="https://www.facebook.com/mariya.bundzeliak/posts/pfbid0P8uEoxdJz91AGm1oZHQnzqPPCLtTxdRJNe4w77Zab8kM5F5Z9tAaeK3iipphaBSrl?rdid=fspHqU0E8pkJaRyO#" target="_blank" rel="noopener noreferrer" class="testimonial-link">Facebook</a>)</span>
+                  <p class="testimonial-name">Iryna Kunitska</p>
+                  <p class="testimonials-span">
+                    (зі сторінки
+                    <a
+                      href="https://www.facebook.com/mariya.bundzeliak/posts/pfbid0P8uEoxdJz91AGm1oZHQnzqPPCLtTxdRJNe4w77Zab8kM5F5Z9tAaeK3iipphaBSrl?rdid=fspHqU0E8pkJaRyO#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="testimonial-link"
+                      >Facebook</a
+                    >)
                   </p>
-                  <p class="testimonial-text">"Щиро рекомендую😊 5 місяців разом і продовжуємо🤝
-                    Заняття дуже цікаві, творчі та пізнавальні. ( навіть мені цікаво😁)
-                    Марія має гарний підхід до діток, завжди усміхнена, щира та привітна.
-                    Навіть, коли дитина не налаштована до уроку, Марія легко знаходить спільну мову та зацікавлює. Результати помітно вже з перших тижнів. За весь час занять можу впевнено сказати, що дуже задоволені - я, як мама, і дитина - як учениця ❤️ дякую що доєднали нас і показали приклад того, яким має бути сучасний вчитель - професійним та уважним до потреб дитини"
+
+                  <p class="testimonial-text slide-scrollable">
+                    "Щиро рекомендую😊 5 місяців разом і продовжуємо🤝 Заняття
+                    дуже цікаві, творчі та пізнавальні. ( навіть мені цікаво😁)
+                    Марія має гарний підхід до діток, завжди усміхнена, щира та
+                    привітна. Навіть, коли дитина не налаштована до уроку, Марія
+                    легко знаходить спільну мову та зацікавлює. Результати
+                    помітно вже з перших тижнів. За весь час занять можу
+                    впевнено сказати, що дуже задоволені - я, як мама, і дитина
+                    - як учениця ❤️ дякую що доєднали нас і показали приклад
+                    того, яким має бути сучасний вчитель - професійним та
+                    уважним до потреб дитини"
+                  </p>
+                  <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-txt-wrapper">
+                  <p class="testimonial-name">Natalia Nudha</p>
+                  <p class="testimonials-span">
+                    (зі сторінки
+                    <a
+                      href="https://www.facebook.com/mariya.bundzeliak/posts/pfbid0P8uEoxdJz91AGm1oZHQnzqPPCLtTxdRJNe4w77Zab8kM5F5Z9tAaeK3iipphaBSrl?rdid=fspHqU0E8pkJaRyO#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="testimonial-link"
+                      >Facebook</a
+                    >)
+                  </p>
+                  <div class="slide-scrollable">
+                    <p class="testimonial-text">
+                      "З Mariia Bundzeliak ми займаємося вже майже три роки.
+                      Безмежно вдячна Марії за її професіоналізм, витримку, за
+                      цікаві та насичені заняття, адже маємо хлопчика з
+                      затримкою мовного розвитку та гіперактивністю. До таких
+                      діток не кожен вчитель може знайти підхід. З Марією в нас
+                      все склалося на відмінно. Дитині цікаво, маємо гарні
+                      успіхи в навчанні. Зараз ми вже в другому класі. Навчання
+                      з Марією будемо продовжувати і надалі, адже дитина з
+                      нетерпіння чекає на наступний урок."
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-txt-wrapper">
+                  <p class="testimonial-name">Krystyna Kyreiko</p>
+                  <p class="testimonials-span">
+                    (зі сторінки
+                    <a
+                      href="https://www.facebook.com/mariya.bundzeliak/posts/pfbid0P8uEoxdJz91AGm1oZHQnzqPPCLtTxdRJNe4w77Zab8kM5F5Z9tAaeK3iipphaBSrl?rdid=fspHqU0E8pkJaRyO#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="testimonial-link"
+                      >Facebook</a
+                    >)
+                  </p>
+                  <p class="testimonial-text">
+                    "Моя донька (6 років) займається з пані Марією вже пів року.
+                    Цікаві заняття, зрозуміле розʼяснення матеріалу. Пані Марія
+                    справжній професіонал своєї справи і робить свою роботу із
+                    задоволенням, це видно! А це і є запорука успіху і у дитинки
+                    також! Дякую Вам, пані Маріє! Я безмежно рада, що саме
+                    Mariia Bundzeliak є вчителькою для моє дитини🙏"
                   </p>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="slide-txt-wrapper">
-                  <p class="testimonial-name">
-                  Natalia Nudha <span class="testimonials-span">(зі сторінки <a href="https://www.facebook.com/mariya.bundzeliak/posts/pfbid0P8uEoxdJz91AGm1oZHQnzqPPCLtTxdRJNe4w77Zab8kM5F5Z9tAaeK3iipphaBSrl?rdid=fspHqU0E8pkJaRyO#" target="_blank" rel="noopener noreferrer" class="testimonial-link">Facebook</a>)</span>
-                  </p>
-                  <p class="testimonial-text">"З Mariia Bundzeliak ми займаємося вже майже три роки. Безмежно вдячна Марії за її професіоналізм, витримку, за цікаві та насичені заняття, адже маємо хлопчика з затримкою мовного розвитку та гіперактивністю. До таких діток не кожен вчитель може знайти підхід. З Марією в нас все склалося на відмінно. Дитині цікаво, маємо гарні успіхи в навчанні. Зараз ми вже в другому класі. Навчання з Марією будемо продовжувати і надалі, адже дитина з нетерпіння чекає на наступний урок."
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slide-txt-wrapper">
-                  <p class="testimonial-name">
-                  Krystyna Kyreiko <span class="testimonials-span">(зі сторінки <a href="https://www.facebook.com/mariya.bundzeliak/posts/pfbid0P8uEoxdJz91AGm1oZHQnzqPPCLtTxdRJNe4w77Zab8kM5F5Z9tAaeK3iipphaBSrl?rdid=fspHqU0E8pkJaRyO#" target="_blank" rel="noopener noreferrer" class="testimonial-link">Facebook</a>)</span>
-                  </p>
-                  <p class="testimonial-text">"Моя донька (6 років) займається з пані Марією вже пів року. Цікаві заняття, зрозуміле розʼяснення матеріалу. Пані Марія справжній професіонал своєї справи і робить свою роботу із задоволенням, це видно! А це і є запорука успіху і у дитинки також! Дякую Вам, пані Маріє! Я безмежно рада, що саме Mariia Bundzeliak є вчителькою для моє дитини🙏"
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slide-txt-wrapper">
-                  <p class="testimonial-name">
-                  Анна Шмакова <span class="testimonials-span">(зі сторінки <a href="https://www.facebook.com/mariya.bundzeliak/posts/pfbid0P8uEoxdJz91AGm1oZHQnzqPPCLtTxdRJNe4w77Zab8kM5F5Z9tAaeK3iipphaBSrl?rdid=fspHqU0E8pkJaRyO#" target="_blank" rel="noopener noreferrer" class="testimonial-link">Facebook</a>)</span>
-                  </p>
-                  <p class="testimonial-text">"В мене три дитини, всі займаються з Mariia Bundzeliak! З Марією ми вже три роки, діти успішно виступають до школи і дуже з хорошим результатом закінчують один клас і переходять в інший! Заняття дуже цікаві, насичені і класно розвивають дітей! Професіонал!!!! Бо навчити малих дітей це дуже і дуже важка праця! Безмежно дякую Вам Марія)))))"
+                  <p class="testimonial-name">Анна Шмакова</p>
+                  <span class="testimonials-span"
+                    >(зі сторінки
+                    <a
+                      href="https://www.facebook.com/mariya.bundzeliak/posts/pfbid0P8uEoxdJz91AGm1oZHQnzqPPCLtTxdRJNe4w77Zab8kM5F5Z9tAaeK3iipphaBSrl?rdid=fspHqU0E8pkJaRyO#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="testimonial-link"
+                      >Facebook</a
+                    >)</span
+                  >
+                  <p class="testimonial-text">
+                    "В мене три дитини, всі займаються з Mariia Bundzeliak! З
+                    Марією ми вже три роки, діти успішно виступають до школи і
+                    дуже з хорошим результатом закінчують один клас і переходять
+                    в інший! Заняття дуже цікаві, насичені і класно розвивають
+                    дітей! Професіонал!!!! Бо навчити малих дітей це дуже і дуже
+                    важка праця! Безмежно дякую Вам Марія)))))"
                   </p>
                 </div>
               </div>
             </div>
             <div class="swiper-button-prev icon-prev">
               <svg class="icon arrow-left">
-                <use xlink:href="./src/styles/img/icons.svg#icon-caret-left"></use>
+                <use
+                  xlink:href="./src/styles/img/icons.svg#icon-caret-left"
+                ></use>
               </svg>
             </div>
             <div class="swiper-button-next icon-next">
               <svg class="icon arrow-right">
-               <use xlink:href="./src/styles/img/icons.svg#icon-caret-right"></use>
+                <use
+                  xlink:href="./src/styles/img/icons.svg#icon-caret-right"
+                ></use>
               </svg>
             </div>
             <div class="swiper-pagination"></div>
           </div>
+        </div>
       </section>
 
       <div class="container two-sections-holder">
@@ -298,14 +432,18 @@
               <li class="prices-item">
                 <h3 class="prices-item-header">Пакет "Прогрес"</h3>
                 <div class="prices-txt-holder">
-                  <p class="prices-text-bold">8 занять / місяць - 2320 грн (290 грн / 45 хв)</p>
+                  <p class="prices-text-bold">
+                    8 занять / місяць - 2320 грн (290 грн / 45 хв)
+                  </p>
                   <p>Оптимальний баланс регулярності та вартості</p>
                 </div>
               </li>
               <li class="prices-item">
                 <h3 class="prices-item-header">Пакет "Успіх"</h3>
                 <div class="prices-txt-holder">
-                  <p class="prices-text-bold" >12 занять / місяць - 3360 грн (280 грн / 45 хв)</p>
+                  <p class="prices-text-bold">
+                    12 занять / місяць - 3360 грн (280 грн / 45 хв)
+                  </p>
                   <p>Максимальний результат і економія</p>
                 </div>
               </li>
@@ -338,7 +476,6 @@
                 class="form-input"
                 placeholder="+38(067)999-88-77"
                 pattern="[\d\+\-]*"
-                inputmode="numeric"
                 minlength="10"
                 maxlength="15"
                 autocomplete="tel"
@@ -353,6 +490,7 @@
                 id="email"
                 class="form-input"
                 placeholder="example@example.com"
+                pattern="^[a-zA-Z0-9._+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$"
                 autocomplete="email"
                 required
               />
@@ -361,8 +499,8 @@
           </div>
         </section>
       </div>
-        <!-- SCROLL-TO-TOP -->
-      <button class="scroll-to-top" id="scrollBtn" >
+      <!-- SCROLL-TO-TOP -->
+      <button class="scroll-to-top" id="scrollBtn">
         <svg class="icon caret-up-icon">
           <use xlink:href="./src/styles/img/icons.svg#icon-caret-up"></use>
         </svg>
@@ -371,7 +509,6 @@
       <!-- MODALS -->
 
       <div id="modal" class="modal-backdrop">
-
         <!-- DISCOUNT MODAL -->
         <div id="modal-discount" class="modal-discount">
           <button class="close-btn">
@@ -379,70 +516,113 @@
               <use xlink:href="./src/styles/img/icons.svg#icon-close"></use>
             </svg>
           </button>
-          <h3 class="modal-header">
-            Літо зі знижкою!
-          </h3>
+          <h3 class="modal-header">Літо зі знижкою!</h3>
           <div class="discount-text-wrapper">
-            <p class="discount-text">Даруємо <strong>10% знижки</strong> на всі літні заняття!</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#ff4500" viewBox="0 0 256 256"><path d="M184,128a56,56,0,1,1-56-56A56,56,0,0,1,184,128Z" opacity="0.2"></path><path d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"></path></svg>
-            <p class="discount-text-small">Пропозиція діє <span class="discount-text-span">до 31.08</span> — не прогав!</p>
+            <p class="discount-text">
+              Даруємо <strong>10% знижки</strong> на всі літні заняття!
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="44"
+              fill="#ff4500"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M184,128a56,56,0,1,1-56-56A56,56,0,0,1,184,128Z"
+                opacity="0.2"
+              ></path>
+              <path
+                d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"
+              ></path>
+            </svg>
+            <p class="discount-text-small">
+              Пропозиція діє <span class="discount-text-span">до 31.08</span> —
+              <br />
+              не прогав!
+            </p>
           </div>
-          <button id="close-upon-enroll">
+          <div class="close-upon-enroll">
             <a href="#enroll" class="cta-btn cta-btn-modal">Отримати</a>
+          </div>
+        </div>
+
+        <!-- THANK YOU MODAL -->
+        <div id="modal-thank-you" class="modal-thank-you">
+          <button class="close-btn">
+            <svg class="icon close-icon">
+              <use xlink:href="./src/styles/img/icons.svg#icon-close"></use>
+            </svg>
           </button>
+          <p class="modal-header">Дякуємо за звернення!</p>
+          <p class="thank-you-text">Ми зв'яжемося з Вами зовсім скоро.</p>
+        </div>
       </div>
-
-      <!-- THANK YOU MODAL -->
-      <div id="modal-thank-you" class="modal-thank-you" >
-        <button class="close-btn">
-          <svg class="icon close-icon">
-            <use xlink:href="./src/styles/img/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <p class="modal-header">Дякуємо за звернення!</p>
-        <p class="thank-you-text">Ми зв'яжемося з Вами зовсім скоро.</p>
-      </div>
-
-    </div>
     </main>
 
     <footer class="footer">
       <div class="container footer-container">
-        <div href="/" class="logo-holder-footer">
-          <img src="./src/styles/img/logo-beige.svg" class="footer-logo"/>
+        <div class="logo-holder-footer">
+          <img
+            src="./src/styles/img/logo-beige.svg"
+            class="footer-logo"
+            alt="school logo"
+          />
         </div>
         <div class="contact-holder">
           <a href="tel:+380677213840" class="footer-tel-number">
             <svg class="icon footer-tel-icon">
               <use xlink:href="./src/styles/img/icons.svg#icon-phone"></use>
             </svg>
-            +38(067)721-38-40</a>
+            +38(067)721-38-40</a
+          >
           <a href="mailto:dim-school@google.com" class="footer-email-address">
             <svg class="icon footer-mail-icon">
               <use xlink:href="./src/styles/img/icons.svg#icon-envelope"></use>
             </svg>
-            mbundzelyak@gmail.com</a>
-            <div class="social-media-holder">
-              <a href="https://www.facebook.com/mariya.bundzeliak" class="facebook-link" target="_blank" rel="noopener noreferrer">
-                <svg class="icon icon-facebook">
-                  <use xlink:href="./src/styles/img/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-              <a href="https://www.instagram.com/tutor_for_children5_11_years" class="instagram-link" target="_blank" rel="noopener noreferrer">
-                <svg class="icon icon-instagram">
-                  <use xlink:href="./src/styles/img/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </div>
+            mbundzelyak@gmail.com</a
+          >
+          <div class="social-media-holder">
+            <a
+              href="https://www.facebook.com/mariya.bundzeliak"
+              class="facebook-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="icon icon-facebook">
+                <use
+                  xlink:href="./src/styles/img/icons.svg#icon-facebook"
+                ></use>
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/tutor_for_children5_11_years"
+              class="instagram-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="icon icon-instagram">
+                <use
+                  xlink:href="./src/styles/img/icons.svg#icon-instagram"
+                ></use>
+              </svg>
+            </a>
+          </div>
         </div>
         <div class="copyright">
-         <p class="copyright-text">
-          <svg class="icon icon-copyright">
-            <use xlink:href="./src/styles/img/icons.svg#icon-copyright"></use>
+          <p class="copyright-text">
+            <svg class="icon icon-copyright">
+              <use xlink:href="./src/styles/img/icons.svg#icon-copyright"></use>
             </svg>
-            Copyright 2025. Created by
-            <a href="http://www.linkedin.com/in/mariia-savchenko" class="developer-link" target="_blank" rel="noopener noreferrer">Mariia Savchenko</a>
-          </p> 
+            Copyright 2025.<br />Created by
+            <a
+              href="http://www.linkedin.com/in/mariia-savchenko"
+              class="developer-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Mariia Savchenko</a
+            >
+          </p>
         </div>
       </div>
     </footer>
@@ -450,4 +630,3 @@
     <script src="./src/main.js"></script>
   </body>
 </html>
-
