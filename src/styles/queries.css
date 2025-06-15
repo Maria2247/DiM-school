@@ -292,7 +292,6 @@
   /**************/
   .section-testimonials {
     padding: 0 0 32px 0;
-    /* padding: 48px 0; */
   }
 
   .container.testimonials-container {
@@ -500,7 +499,7 @@
   }
 
   .hero-img-box {
-    top: -15px;
+    top: 0;
     right: -5%;
     height: 600px;
     overflow: hidden;
